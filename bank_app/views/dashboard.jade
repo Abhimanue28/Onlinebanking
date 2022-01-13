@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  title ="DASHBOARD"
+  p Welcome #{reference_id}
+  a(href= 'http://127.0.0.1:3000/balance/#{reference_id}') 
+    button Check Balance 
+  a(href= 'http://127.0.0.1:3000/deposit_form/#{reference_id}') 
+    button Deposit 
+  a(href= 'http://127.0.0.1:3000/withdraw_form/#{reference_id}') 
+    button Withdraw

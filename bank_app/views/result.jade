@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  title = "RESULT"
+  script.
+    if (#{status} == 0){
+        alert("Insufficient balance");
+    }
+  p RESULT: Your balance is #{balance}
+  a(href= 'http://127.0.0.1:3000/dashboard/#{reference_id}') 
+    button HOME

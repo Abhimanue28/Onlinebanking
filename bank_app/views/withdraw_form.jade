@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  title = "Withdraw_form"
+  h1 WITHDRAW
+  form(name="withdraw", method="post", action='/withdraw/#{reference_id}')
+        div.input
+            span.label WITHDRAWL AMOUNT
+            input(type="number",min="100", max="10000", name="withdraw_amount",required)
+        div.actions
+            input(type="submit", value="WITHDRAW")
+            br
+            br
